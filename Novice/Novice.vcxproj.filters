@@ -14,6 +14,12 @@
     <Filter Include="KamataEngine\Adapter">
       <UniqueIdentifier>{c6468eb4-788b-4a83-b207-a5f4804e56c5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="chord">
+      <UniqueIdentifier>{224df92d-29c6-4971-8739-07bcb2ac09c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header">
+      <UniqueIdentifier>{39441a09-9e1f-46f4-bc30-2b5baafa7200}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\DirectXCommon.cpp">
@@ -28,7 +34,6 @@
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\WinApp.cpp">
       <Filter>KamataEngine\Source</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
       <Filter>KamataEngine\Adapter</Filter>
     </ClCompile>
@@ -37,6 +42,15 @@
     </ClCompile>
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\StringUtility.cpp">
       <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>chord</Filter>
+    </ClCompile>
+    <ClCompile Include="IScene.cpp">
+      <Filter>chord</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>chord</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +124,12 @@
     <ClInclude Include="C:\KamataEngine\DirectXGame\2d\ImGuiManager.h" />
     <ClInclude Include="C:\KamataEngine\DirectXGame\base\StringUtility.h">
       <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="IScene.h">
+      <Filter>chord</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>chord</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
