@@ -17,7 +17,7 @@
     <Filter Include="chord">
       <UniqueIdentifier>{224df92d-29c6-4971-8739-07bcb2ac09c9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="header">
+    <Filter Include="Scene">
       <UniqueIdentifier>{39441a09-9e1f-46f4-bc30-2b5baafa7200}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -48,6 +48,15 @@
     </ClCompile>
     <ClCompile Include="IScene.cpp">
       <Filter>chord</Filter>
+    </ClCompile>
+    <ClCompile Include="ClearScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="StageScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TitlScene.cpp">
+      <Filter>Scene</Filter>
     </ClCompile>
     <ClCompile Include="GameManager.cpp">
       <Filter>chord</Filter>
@@ -130,6 +139,15 @@
     </ClInclude>
     <ClInclude Include="GameManager.h">
       <Filter>chord</Filter>
+    </ClInclude>
+    <ClInclude Include="ClearScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="StageScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TitlScene.h">
+      <Filter>Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
