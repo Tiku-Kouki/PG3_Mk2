@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include <memory>
 #include "IScene.h"
 #include "StageScene.h"
@@ -8,12 +8,12 @@
 
 class GameManager {
 private:
-	//ƒV[ƒ“‚ğ•Û‚·‚éƒƒ“ƒoŠÖ”
+	//ã‚·ãƒ¼ãƒ³ã‚’ä¿æŒã™ã‚‹ãƒ¡ãƒ³ãƒé–¢æ•°
 	std::unique_ptr<IScene> sceneArr_[3];
 
 	//
-	int currenSceneNo_;	//Œ»İ‚ÌƒV[ƒ“
-	int prevSceneNO_;	//‰ß‹‚ÌƒV[ƒ“
+	int currenSceneNo_;	//ç¾åœ¨ã®ã‚·ãƒ¼ãƒ³
+	int prevSceneNO_;	//éå»ã®ã‚·ãƒ¼ãƒ³
 
 	
 

@@ -1,8 +1,8 @@
-#include "IScene.h"
-	//ƒ^ƒCƒgƒ‹ƒV[ƒ“‚Å‰Šú‰»
+ï»¿#include "IScene.h"
+	//ã‚¿ã‚¤ãƒˆãƒ«ã‚·ãƒ¼ãƒ³ã§åˆæœŸåŒ–
 int IScene::sceneNo = TITLE;
 
-//‰¼‘zƒfƒXƒgƒ‰ƒNƒ^‚Ì’è‹`
+//ä»®æƒ³ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã®å®šç¾©
 IScene::~IScene() {}
 
 int IScene::GetSceneNo() { return sceneNo; }

@@ -1,7 +1,7 @@
-#include "GameManager.h"
+ï»¿#include "GameManager.h"
 
 GameManager::GameManager() {
-//ŠeƒV[ƒ“‚Ì”z—ñ
+//å„ã‚·ãƒ¼ãƒ³ã®é…åˆ—
 	sceneArr_[TITLE] = std::make_unique<TitlScene>();
 	sceneArr_[STAGE] = std::make_unique<StageScene>();
 	sceneArr_[CLEAR] = std::make_unique<ClearScene();
@@ -15,20 +15,20 @@ int GameManager::Run() {
 	while (Novice::ProcessMessage() == 0) {
 		Novice::BeginFrame();
 
-		//ƒV[ƒ“‚Ìƒ`ƒFƒbƒN
+		//ã‚·ãƒ¼ãƒ³ã®ãƒã‚§ãƒƒã‚¯
 		prevSceneNO_ = currenSceneNo_;
 		currenSceneNo_ = sceneArr_[currenSceneNo_]->GetSceneNo();
 
-		// ƒV[ƒ“•ÏXƒ`ƒFƒbƒN
+		// ã‚·ãƒ¼ãƒ³å¤‰æ›´ãƒã‚§ãƒƒã‚¯
 		if (prevSceneNO_ != currenSceneNo_) {
 			sceneArr_[currenSceneNo_]->Init();
 		}
-		 //XVˆ—
+		 //æ›´æ–°å‡¦ç†
 		sceneArr_[currenSceneNo_]->Update();
-		//•`‰æˆ—
+		//æç”»å‡¦ç†
 		sceneArr_[currenSceneNo_]->Draw();
 
-		Novice::EndFrame();//ƒtƒŒ[ƒ€‚ÌI—¹
+		Novice::EndFrame();//ãƒ•ãƒ¬ãƒ¼ãƒ ã®çµ‚äº†
 
 		if (inputManager->GetPreKeys()[DIK_ESCAPE]==0&&
 		    inputManager->GetPreKeys()[DIK_ESCAPE] != 0) {

@@ -1,9 +1,9 @@
-#pragma once
+ï»¿#pragma once
 enum Scene {TITLE,STAGE,CLEAR};
 
 class IScene {
 protected:
-	//ƒV[ƒ“”Ô†‚ğŠÇ—‚·‚é•Ï”
+	//ã‚·ãƒ¼ãƒ³ç•ªå·ã‚’ç®¡ç†ã™ã‚‹å¤‰æ•°
 	static int sceneNo;
 
 public:
