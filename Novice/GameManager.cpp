@@ -21,7 +21,11 @@ int GameManager::Run() {
 
 		// シーン変更チェック
 		if (prevSceneNO_ != currenSceneNo_) {
-			sceneArr_[currenSceneNo_]->Init();
+			
+			sceneArr_[currenSceneNo_]->Init(keys_[], preKeys_[256]
+			
+			
+			);
 		}
 		 //更新処理
 		sceneArr_[currenSceneNo_]->Update();
