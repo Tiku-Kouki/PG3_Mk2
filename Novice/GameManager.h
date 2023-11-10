@@ -15,12 +15,15 @@ private:
 	int currenSceneNo_;	//現在のシーン
 	int prevSceneNO_;	//過去のシーン
 
-	Input inputManager = nullptr;
+	Input inputManager;
 
 	public:
 	GameManager();
 	~GameManager();
 
 	int Run();
+
+	private:
+	char keys_[256], preKeys_[256];
 
 };
