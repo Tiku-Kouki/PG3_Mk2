@@ -14,11 +14,11 @@
     <Filter Include="KamataEngine\Adapter">
       <UniqueIdentifier>{c6468eb4-788b-4a83-b207-a5f4804e56c5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="chord">
-      <UniqueIdentifier>{224df92d-29c6-4971-8739-07bcb2ac09c9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Scene">
       <UniqueIdentifier>{39441a09-9e1f-46f4-bc30-2b5baafa7200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{224df92d-29c6-4971-8739-07bcb2ac09c9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -44,10 +44,10 @@
       <Filter>KamataEngine\Source</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>chord</Filter>
+      <Filter>main</Filter>
     </ClCompile>
     <ClCompile Include="IScene.cpp">
-      <Filter>chord</Filter>
+      <Filter>main</Filter>
     </ClCompile>
     <ClCompile Include="ClearScene.cpp">
       <Filter>Scene</Filter>
@@ -59,7 +59,7 @@
       <Filter>Scene</Filter>
     </ClCompile>
     <ClCompile Include="GameManager.cpp">
-      <Filter>chord</Filter>
+      <Filter>main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -135,10 +135,10 @@
       <Filter>KamataEngine\Include</Filter>
     </ClInclude>
     <ClInclude Include="IScene.h">
-      <Filter>chord</Filter>
+      <Filter>main</Filter>
     </ClInclude>
     <ClInclude Include="GameManager.h">
-      <Filter>chord</Filter>
+      <Filter>main</Filter>
     </ClInclude>
     <ClInclude Include="ClearScene.h">
       <Filter>Scene</Filter>
