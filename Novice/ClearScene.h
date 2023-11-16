@@ -3,7 +3,7 @@
 #include <Novice.h>
 class ClearScene : public IScene {
 public:
-	void Init(char keys[256], char preKeys[256]) override;
+	void Init(char keys[], char preKeys[]) override;
 
 	void Update() override;
 
@@ -11,6 +11,8 @@ public:
 
 	private:
 
-char keys_[256],preKeys_[256];
+char keys_[256] = {}, preKeys_[256] = {};
+
+int grHandle;
 
 };

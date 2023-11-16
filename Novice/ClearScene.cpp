@@ -1,6 +1,6 @@
 ﻿#include "ClearScene.h"
 
-void ClearScene::Init(char keys[256], char preKeys[256]) {
+void ClearScene::Init(char keys[], char preKeys[]) {
 
 	for (int i = 0; i < 256; i++) {
 
@@ -8,6 +8,7 @@ void ClearScene::Init(char keys[256], char preKeys[256]) {
 
 		preKeys_[i] = preKeys[i];
 	}
+	grHandle = Novice::LoadTexture("title.png");
 }
 
 void ClearScene::Update() {
@@ -22,7 +23,7 @@ void ClearScene::Update() {
 
 void ClearScene::Draw() {
 
+	
+	Novice::DrawSprite(0, 0, grHandle, 1.0f, 1.0f, 0.0f, 0xFFFFFFFF);
 	Novice::ScreenPrintf(0, 0, "Clear");
-
-
 }

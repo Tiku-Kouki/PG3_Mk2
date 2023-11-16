@@ -13,13 +13,15 @@ private:
 
 	//
 	int currenSceneNo_;	//現在のシーン
-	int prevSceneNO_;	//過去のシーン
+	int prevSceneNO_ = 3; // 過去のシーン
 
-	Input inputManager;
+	
 
 	public:
 	GameManager();
 	~GameManager();
+
+	void Int(char keys[], char preKeys[]);
 
 	int Run();
 

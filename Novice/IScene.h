@@ -9,7 +9,7 @@ protected:
 public:
 	//
 	//
-	virtual void Init(char keys[256], char preKeys[256]) = 0;
+	virtual void Init(char keys[], char preKeys[]) = 0;
 	virtual void Update() = 0;
 	virtual void Draw() = 0;
 
