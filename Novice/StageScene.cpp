@@ -1,13 +1,13 @@
 ﻿#include "StageScene.h"
 
-void StageScene::Init(const char keys[], const char preKeys[]) {
+void StageScene::Init(char* keys, char* preKeys) {
 
-	for (int i = 0; i < 256; i++) {
+	
 
-		keys_[i] = keys[i];
+		keys_ = keys;
 
-		preKeys_[i] = preKeys[i];
-	}
+		preKeys_ = preKeys;
+	
 
 	// プレイヤー
 	 playerPosX = 640.0f; // プレイヤーの座標X
@@ -35,7 +35,7 @@ void StageScene::Init(const char keys[], const char preKeys[]) {
 
 void StageScene::Update() {
 
-	if (!preKeys_[DIK_SPACE] && keys_[DIK_SPACE]) {
+	if (isEnemyAlive == 0) {
 
 		sceneNo = CLEAR;
 	 }
@@ -98,15 +98,7 @@ void StageScene::Update() {
 		// 敵を消す(フラグを用意する)
 		isEnemyAlive = 0;
 	 }
-	 if (isEnemyAlive == 0) {
-		// 復活用タイマーを1減らす
-		respawnTimer--;
-		// 復活用タイマーが0になったら
-		if (respawnTimer == 0) {
-			isEnemyAlive = 1;
-			respawnTimer = 120;
-		}
-	 }
+	 
 
 	 if (isEnemyAlive == 1) {
 		enemyPosX += enemySpeed;

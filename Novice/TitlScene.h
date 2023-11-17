@@ -4,14 +4,14 @@
 #include "Input.h"
 class TitlScene : public IScene {
 public:
-	void Init(const char keys[], const char preKeys[]) override;
+	void Init( char* keys,  char *preKeys) override;
 
 	void Update() override;
 
 	void Draw() override;
 
 	private:
-	char keys_[256], preKeys_[256];
+	 char *keys_,* preKeys_;
 
 	//int grHandle;
 

@@ -11,18 +11,12 @@ GameManager::GameManager() {
 
 GameManager::~GameManager() {}
 
-void GameManager::Int(const char keys[],const char preKeys[]) {
-
-	 for (int i = 0; i < 256; i++) {
-
-		keys_[i] = keys[i];
-
-		preKeys_[i] = preKeys[i];
-	}
-
+void GameManager::Init() { 
+	sceneArr_[currenSceneNo_]->Init(keys_, preKeys_); 
 }
 
 int GameManager::Run() { 
+	
 	while (Novice::ProcessMessage() == 0) {
 		Novice::BeginFrame();
 
@@ -36,9 +30,7 @@ int GameManager::Run() {
 
 		// シーン変更チェック
 		
-		if (prevSceneNO_ != currenSceneNo_ || (prevSceneNO_ == TITLE && currenSceneNo_ == TITLE) ||
-		    (prevSceneNO_ == STAGE && currenSceneNo_ == STAGE) ||
-		    (prevSceneNO_ == CLEAR && currenSceneNo_ == CLEAR)) {
+		if (prevSceneNO_ != currenSceneNo_ ) {
 			
 			sceneArr_[currenSceneNo_]->Init(keys_, preKeys_);
 		}

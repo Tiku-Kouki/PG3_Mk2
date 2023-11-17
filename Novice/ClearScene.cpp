@@ -1,13 +1,12 @@
 ﻿#include "ClearScene.h"
 
-void ClearScene::Init(const char keys[], const char preKeys[]) {
+void ClearScene::Init(char* keys, char* preKeys) {
 
-	for (int i = 0; i < 256; i++) {
 
-		keys_[i] = keys[i];
+		keys_ = keys;
 
-		preKeys_[i] = preKeys[i];
-	}
+		preKeys_ = preKeys;
+	
 	//grHandle = Novice::LoadTexture("title.png");
 }
 

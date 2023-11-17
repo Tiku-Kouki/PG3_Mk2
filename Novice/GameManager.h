@@ -21,7 +21,7 @@ private:
 	GameManager();
 	~GameManager();
 
-	void Int(const char keys[], const char preKeys[]);
+	void Init();
 
 	int Run();
 
