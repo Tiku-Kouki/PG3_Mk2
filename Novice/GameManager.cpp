@@ -11,7 +11,7 @@ GameManager::GameManager() {
 
 GameManager::~GameManager() {}
 
-void GameManager::Int(char keys[], char preKeys[]) {
+void GameManager::Int(const char keys[],const char preKeys[]) {
 
 	 for (int i = 0; i < 256; i++) {
 
@@ -26,7 +26,9 @@ int GameManager::Run() {
 	while (Novice::ProcessMessage() == 0) {
 		Novice::BeginFrame();
 
-		
+		 // キー入力を受け取る
+		memcpy(preKeys_, keys_, 256);
+		Novice::GetHitKeyStateAll(keys_);
 
 		//シーンのチェック
 		prevSceneNO_ = currenSceneNo_;
@@ -34,13 +36,13 @@ int GameManager::Run() {
 
 		// シーン変更チェック
 		
-		if (prevSceneNO_ != currenSceneNo_ || (prevSceneNO_ == TITLE && currenSceneNo_ == TITLE)) {
+		if (prevSceneNO_ != currenSceneNo_ || (prevSceneNO_ == TITLE && currenSceneNo_ == TITLE) ||
+		    (prevSceneNO_ == STAGE && currenSceneNo_ == STAGE) ||
+		    (prevSceneNO_ == CLEAR && currenSceneNo_ == CLEAR)) {
 			
 			sceneArr_[currenSceneNo_]->Init(keys_, preKeys_);
 		}
-		// キー入力を受け取る
-		memcpy(preKeys_, keys_, 256);
-		Novice::GetHitKeyStateAll(keys_);
+		
 		 //更新処理
 		sceneArr_[currenSceneNo_]->Update();
 		//描画処理
@@ -48,7 +50,7 @@ int GameManager::Run() {
 
 		Novice::EndFrame();//フレームの終了
 
-		if (preKeys_[DIK_ESCAPE] == 0 && preKeys_[DIK_ESCAPE] != 0) {
+		if (preKeys_[DIK_ESCAPE] == 0 && keys_[DIK_ESCAPE] != 0) {
 			break;
 		}
 	}

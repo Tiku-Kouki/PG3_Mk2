@@ -3,7 +3,7 @@
 #include <Novice.h>
 class StageScene : public IScene{
 public:
-	void Init(char keys[], char preKeys[]) override;
+	void Init(const char keys[], const char preKeys[]) override;
 
 	void Update() override;
 

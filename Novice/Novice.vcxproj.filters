@@ -40,9 +40,6 @@
     <ClCompile Include="C:\KamataEngine\DirectXGame\2d\ImGuiManager.cpp">
       <Filter>KamataEngine</Filter>
     </ClCompile>
-    <ClCompile Include="C:\KamataEngine\DirectXGame\base\StringUtility.cpp">
-      <Filter>KamataEngine\Source</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>main</Filter>
     </ClCompile>
@@ -60,6 +57,9 @@
     </ClCompile>
     <ClCompile Include="GameManager.cpp">
       <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DirectXGame\base\StringUtility.cpp">
+      <Filter>KamataEngine\Source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -131,9 +131,6 @@
     <ClInclude Include="C:\KamataEngine\DirectXGame\math\Vector3.h" />
     <ClInclude Include="C:\KamataEngine\DirectXGame\math\Vector4.h" />
     <ClInclude Include="C:\KamataEngine\DirectXGame\2d\ImGuiManager.h" />
-    <ClInclude Include="C:\KamataEngine\DirectXGame\base\StringUtility.h">
-      <Filter>KamataEngine\Include</Filter>
-    </ClInclude>
     <ClInclude Include="IScene.h">
       <Filter>main</Filter>
     </ClInclude>
@@ -148,6 +145,9 @@
     </ClInclude>
     <ClInclude Include="TitlScene.h">
       <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DirectXGame\base\StringUtility.h">
+      <Filter>KamataEngine\Include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

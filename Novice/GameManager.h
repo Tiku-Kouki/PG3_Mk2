@@ -12,8 +12,8 @@ private:
 	std::unique_ptr<IScene> sceneArr_[3];
 
 	//
-	int currenSceneNo_;	//現在のシーン
-	int prevSceneNO_ = 3; // 過去のシーン
+	int currenSceneNo_ ; // 現在のシーン
+	int prevSceneNO_ ; // 過去のシーン
 
 	
 
@@ -21,7 +21,7 @@ private:
 	GameManager();
 	~GameManager();
 
-	void Int(char keys[], char preKeys[]);
+	void Int(const char keys[], const char preKeys[]);
 
 	int Run();
 

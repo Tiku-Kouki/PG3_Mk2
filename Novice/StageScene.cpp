@@ -1,6 +1,6 @@
 ﻿#include "StageScene.h"
 
-void StageScene::Init(char keys[], char preKeys[]) {
+void StageScene::Init(const char keys[], const char preKeys[]) {
 
 	for (int i = 0; i < 256; i++) {
 
